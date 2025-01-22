@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+	box-sizing: border-box;
+}
+
+.hero{
+	width: 100%;
+	min-height: 100vh;
+	background-image:linear-gradient(45deg,rgba(0,0,0,0.85),rgba(118,0,255,0.85)), url(images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 10px 8px;
+	text-align: center;
+	color: #fff;
+}
+
+.btn{
+	background: linear-gradient(#6a33ff,#351a80);
+	color: #fff;
+	font-size: 16px;
+	padding: 16px 30px;
+	border-radius: 30px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.content{
+	margin: 15% auto 0;
+}
+
+.content h1{
+	font-size: 65px;
+	font-weight: 400;
+}
+
+.content h1 span{
+	font-weight: 700;
+}
+
+.form2 {
+	width: 90%;
+	max-width: 600px;
+	height: 65px;
+	background: #fff;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	border-radius: 40px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+form input{
+	flex: 1;
+	padding: 20px 30px;
+	font-size: 16px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+input.example {
+    border: none;
+    font-size: 16px;
+}
+
+form .btn{
+	padding: 0;
+	width: 150px;
+	height: 65px;
+	border-radius: 31px;
+}
+
+li{
+	display: inline-block;
+	font-size: 1.5em;
+	padding: 1em;
+    text-transform: uppercase;
+}
+
+span{
+    display: block;
+    font-size: 2.5rem;
+}
+
+
+
+/* Pop-up form design  */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form .btn1{
+	padding: 0;
+	width: 150px;
+	height: 65px;
+	border-radius: none;
+}
+
+.form-popup {
+    display: none; /* Hidden by default */
+   text-align: center;
+   position:relative;
+    /*  bottom: 0;*/
+    right: 15px; 
+    /* border: 3px solid #f1f1f1; */
+    z-index: 9;
+}
+
+.form-container {
+    margin-left: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: white; */
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 38%;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+.form-container textarea{
+    width: 38%;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title> Coming Soon Page - GreatStack</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #countdown { font-size: 2em; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <button class="btn" onclick="openForm()"> Get in Touch</button>
+         </nav>
+
+            <!-- pop up form design-->
+        <div class="form-popup" id="myForm">
+            <form action="/submit_form" class="form-container">
+               <h1>Contact Us</h1><br>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email"  id="email" autocomplete="true" required>
+
+                <label for="message"><b>Message</b></label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <!-- <input type="text" placeholder="Enter Message" name="message" id="message" autocomplete="true" required> -->
+                
+                <div>
+                <button type="submit" class="btn" onclick="sendMail()">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </div>
+            </form>
+        </div>
+
+        <div class="content">
+            <h1>Our website is <b> coming soon</b></h1>
+
+            <div class="countdown">
+                <ul>
+                    <li><span class="days"></span>days</li>
+                    <li><span class="hours"></span>hours</li>
+                    <li><span class="minutes"></span>minutes</li>
+                    <li><span class="seconds"></span>seconds</li> 
+                </ul>
+                </div>
+
+            <form class="form2">
+                <input type="email" name="email" placeholder = "Email Address" autocomplete="true" Required >
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="countdown"></div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
